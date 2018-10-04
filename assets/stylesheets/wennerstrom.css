@@ -1,0 +1,96 @@
+body {
+	padding-top: 50px;
+	background-color: #fff;
+}
+
+.center-text {
+	padding-top: 10px;
+	text-align: center;
+}
+
+ul.service-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.service-list li a {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 6px 20px;
+	font-size: 0.9em;
+	display: inline-block;
+	width: 200px;
+}
+
+ul.service-list li a:not(:last-child) {
+	border-bottom: none;
+}
+
+hr {
+	overflow: visible;
+	padding: 0; 
+	border: none; 
+	border-top: medium double #333; 
+	color: #333; 
+	text-align: center; 
+	margin: 16px;
+}
+
+hr.with-paragraph:after {
+	content: "§"; 
+}
+
+hr:after { 
+	display: inline-block; 
+	position: relative; 
+	top: -0.7em; 
+	font-size: 1.5em; 
+	padding: 0 0.25em; 
+	background: white; 
+}
+
+span.large-text {
+	display: inline-block; 
+	position: relative; 
+	top: 0.1em;
+	font-size: 1.7em;
+}
+
+main {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+article {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	color: #555;
+}
+
+address {
+	font-style: normal;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h1, h2, h3, p, a, small {
+	font-family: Courier;
+	font-weight: lighter;
+	color: #1b264f;
+}
+
+p {
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #aaa;
+}
