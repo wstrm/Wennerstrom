@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'CourierCodeRoman';
+	src: url('/assets/fonts/CourierCode-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	padding-top: 50px;
 	background-color: #fff;
@@ -42,7 +49,7 @@ hr {
 }
 
 hr.with-paragraph:after {
-	content: "§"; 
+	content: "ω"; 
 }
 
 hr:after { 
@@ -82,8 +89,7 @@ h1, h2 {
 }
 
 h1, h2, h3, p, a, small {
-	font-family: Courier;
-	font-weight: lighter;
+	font-family: 'CourierCodeRoman';
 	color: #1b264f;
 }
 
