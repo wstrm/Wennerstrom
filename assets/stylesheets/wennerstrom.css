@@ -5,6 +5,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'CourierCodeBold';
+	src: url('/assets/fonts/CourierCode-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	padding-top: 10px;
 	background-color: #fff;
@@ -51,12 +58,22 @@ hr {
 	margin: 16px;
 }
 
-hr.with-paragraph:after {
-	content: "ξ";
+hr.with-w:after {
+	content: "W";
 	position: relative;
 	top: -0.7em; 
 	font-size: 1.9em; 
 	color: #ccc;
+	font-family: 'CourierCodeBold';
+}
+
+hr.with-dot:after {
+	content: ".";
+	position: relative;
+	top: -0.85em; 
+	font-size: 1.9em; 
+	color: #ccc;
+	font-family: 'CourierCodeBold';
 }
 
 hr:after { 
