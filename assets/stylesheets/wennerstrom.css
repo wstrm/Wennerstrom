@@ -34,12 +34,7 @@ ul.service-list {
 	display: inline-block;
 }
 
-ul.service-list li {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 4px 18px;
-}
-
-ul.service-list li:not(:last-child) {
+ul.service-list li a:not(:last-child) {
 	border-bottom: none;
 }
 
@@ -47,6 +42,8 @@ ul.service-list li a {
 	background-color: #fff;
 	font-size: 0.9em;
 	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 4px 18px;
 }
 
 hr {
