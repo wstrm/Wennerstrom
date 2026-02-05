@@ -1,13 +1,13 @@
 @font-face {
 	font-family: 'CourierCodeRoman';
-	src: url('/assets/fonts/CourierCode-Roman.ttf') format('truetype');
+	src: url('../fonts/CourierCode-Roman.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'CourierCodeBold';
-	src: url('/assets/fonts/CourierCode-Bold.ttf') format('truetype');
+	src: url('../fonts/CourierCode-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -60,6 +60,15 @@ hr.with-w:after {
 	position: relative;
 	top: -0.7em; 
 	font-size: 1.9em; 
+	color: #ccc;
+	font-family: 'CourierCodeBold';
+}
+
+hr.with-rw:after {
+	content: "R & W";
+	position: relative;
+	top: -0.7em;
+	font-size: 1.9em;
 	color: #ccc;
 	font-family: 'CourierCodeBold';
 }
