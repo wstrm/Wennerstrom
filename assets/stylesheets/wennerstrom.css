@@ -61,16 +61,7 @@ hr.with-w:after {
 	top: -0.7em; 
 	font-size: 1.9em; 
 	color: #ccc;
-	font-family: 'CourierCodeBold';
-}
-
-hr.with-rw:after {
-	content: "R & W";
-	position: relative;
-	top: -0.7em;
-	font-size: 1.9em;
-	color: #ccc;
-	font-family: 'CourierCodeBold';
+	font-family: 'CourierCodeBold', monospace;
 }
 
 hr.with-dot:after {
@@ -79,7 +70,7 @@ hr.with-dot:after {
 	top: -0.85em; 
 	font-size: 1.9em; 
 	color: #ccc;
-	font-family: 'CourierCodeBold';
+	font-family: 'CourierCodeBold', monospace;
 }
 
 hr:after { 
@@ -119,7 +110,7 @@ h1, h2 {
 }
 
 h1, h2, h3, p, a, small, hr {
-	font-family: 'CourierCodeRoman';
+	font-family: 'CourierCodeRoman', monospace;
 }
 
 p {

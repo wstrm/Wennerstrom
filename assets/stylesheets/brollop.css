@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'ImperialScriptRegular';
+	src: url('../fonts/ImperialScript-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EBGaramondRegular';
+	src: url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	padding-top: 10px;
+	background-color: rgb(249, 247, 248);
+}
+
+.center-text {
+	padding-top: 10px;
+	text-align: center;
+}
+
+header {
+	padding-bottom: 20px;
+}
+
+ul.button-group {
+	list-style: none;
+	padding: 0;
+	margin: 20px;
+	width: 200px;
+	display: inline-block;
+}
+
+ul.button-group li a:not(:last-child) {
+	border-bottom: none;
+}
+
+ul.button-group li a {
+	font-size: 1.2em;
+	display: inline-block;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	padding: 12px 60px;
+}
+
+hr {
+	overflow: visible;
+	padding: 0; 
+	border: none; 
+	border-top: medium double rgba(102, 113, 85, 0.3);
+	text-align: center; 
+	margin: 16px;
+}
+
+hr.with-rw:after {
+	content: "R & W";
+	position: relative;
+	top: -0.7em;
+	font-size: 1.9em;
+	color: rgba(102, 113, 85, 0.3);
+	font-family: 'ImperialScriptRegular', serif;
+}
+
+hr:after { 
+	display: inline-block; 
+	padding: 0 0.25em; 
+	background-color: rgb(249, 247, 248);
+}
+
+main {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+article {
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+h1, h2 {
+	margin: 0;
+	font-family: 'ImperialScriptRegular', serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3, p, a, small, hr {
+	font-family: 'EBGaramondRegular', monospace;
+}
+
+p {
+	margin: 5px;
+}
+
+a {
+	text-decoration: underline;
+	white-space:nowrap;
+}
+
+a:hover {
+	color: rgba(102, 113, 85, 0.5);
+}
+
+h1, h2, h3, p, a, small, hr {
+	color: rgb(102, 113, 85);
+}
