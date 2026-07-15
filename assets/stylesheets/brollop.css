@@ -114,8 +114,3 @@ a:hover {
 h1, h2, h3, p, a, small, hr {
 	color: rgb(102, 113, 85);
 }
-
-section.with-border {
-	border: 2px;
-	border-color: rgba(102, 113, 85, 0.3);
-}
