@@ -1,0 +1,211 @@
+:root {
+	--vit: #FFFFFF;
+	--glow: #FFF7E4;
+	--paper: #FFE7B0;
+	--paper-deep: #FFDC93;
+	--ink: #000000;
+	--krafta: #D93A22;
+	--krafta-ljus: #F0714F;
+	--mane: #FFC53D;
+	--bla: #2F7EA8;
+	--dill: #6B9E45;
+	--sans: "Trebuchet MS", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--paper);
+	background-image: radial-gradient(ellipse 120% 70% at 50% 0%, var(--glow) 0%, var(--paper) 55%, var(--paper-deep) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	font-family: var(--sans);
+	color: var(--ink);
+}
+
+/* Ram runt hela inbjudan. */
+.frame {
+	max-width: 760px;
+	margin: 0 auto;
+	background-color: var(--vit);
+	border: 4px double var(--ink);
+	overflow: hidden;
+}
+
+.center-text {
+	padding-top: 10px;
+	text-align: center;
+}
+
+/* Rutig duk, som på kräftskivebordet. */
+.checker {
+	height: 18px;
+	background-image: repeating-conic-gradient(var(--krafta) 0% 25%, var(--vit) 0% 50%);
+	background-size: 36px 36px;
+}
+
+/* Lyktslinga. */
+.garland {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Kräftan i sidhuvudet. */
+.krafta {
+	display: block;
+	width: 124px;
+	max-width: 42vw;
+	height: auto;
+	margin: 18px auto 4px;
+}
+
+/* Dillkrona mellan avsnitten. */
+.dill {
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	margin: 30px auto 22px;
+	color: var(--dill);
+}
+
+header {
+	padding-bottom: 4px;
+}
+
+main {
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+
+article {
+	margin-top: 6px;
+	margin-bottom: 46px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 3.2em;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	line-height: 1.05;
+}
+
+h2 {
+	margin: 0;
+	font-size: 2.1em;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	line-height: 1.15;
+}
+
+h3 {
+	margin-top: 30px;
+	margin-bottom: 6px;
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 0.24em;
+	text-transform: uppercase;
+}
+
+/* Liten trefärgad rad under varje rubrik. */
+h3:after {
+	content: "";
+	display: block;
+	width: 38px;
+	height: 4px;
+	margin: 9px auto 0;
+	border-radius: 2px;
+	background-image: linear-gradient(90deg, var(--krafta) 0 33%, var(--mane) 33% 66%, var(--bla) 66% 100%);
+}
+
+p {
+	margin: 6px auto;
+	max-width: 46ch;
+	line-height: 1.65;
+	text-wrap: balance;
+}
+
+.lead {
+	letter-spacing: 0.3em;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 22px;
+	margin-bottom: 8px;
+}
+
+.sub {
+	letter-spacing: 0.06em;
+	font-size: 1em;
+	margin-top: 8px;
+	margin-bottom: 26px;
+}
+
+/* Datumblocket. */
+.datum {
+	font-size: 1.7em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	line-height: 1.15;
+}
+
+.detalj {
+	font-size: 1.02em;
+	letter-spacing: 0.04em;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+/* Avslutande hälsning. */
+.avslut {
+	margin-top: 34px;
+	font-size: 1.15em;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
+h1, h2, h3, p, a, small, li {
+	color: var(--ink);
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-color: var(--krafta);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+a:hover {
+	color: var(--krafta);
+}
+
+@media (max-width: 420px) {
+	body {
+		padding: 14px 10px;
+	}
+
+	h1 {
+		font-size: 2.3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.datum {
+		font-size: 1.35em;
+	}
+}
